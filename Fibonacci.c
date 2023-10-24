@@ -11,10 +11,13 @@ unsigned long long int Fibonacci(unsigned long long int n) {
 }
 int main() {
   unsigned long long int n;
+  int i;
   printf("Ingresa un numero:\n");
   scanf("%llu", &n);
   printf("Los elementos de la serie son:\n");
-  printf("%llu\n", Fibonacci(n));
+  for(i=0; i<n; i++){
+    printf("%llu ", Fibonacci(i));
+  }
   return 0;
 }
 
